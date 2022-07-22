@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --white: #fff;
+  --light-gray: #d6e2f0;
+  --grayish-blue: #7b879d;
+  --dark-blue: #1f3251;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  background-color: var(--light-gray);
+  font-family: 'Outfit', Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 22.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--white);
+  padding: 1rem;  
+  margin: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.18);
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin-block-end: 1rem;
+}
+
+.title {
+  color: var(--dark-blue);
+  font-size: 1.4rem;
+  line-height: 1.85rem;
+}
+
+.sub-title {
+  color: var(--grayish-blue);
+  font-size: 1rem;
+  font-weight: lighter;
+  padding: 1rem;
+  line-height: 1.2rem;
+  margin-block-end: 1rem;
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    max-width: 30%;
+  }
+
+  .sub-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .container {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 100%;
+  }
+}
